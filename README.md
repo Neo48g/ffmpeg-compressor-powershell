@@ -33,7 +33,7 @@ If you don't have FFmpeg installed, you can install it in two ways:
    - Press `V` and `T` to configure **VMAF** and Auto-CRF thresholds.
 5. Press `0` to start the compression process.
 
-##️ Configuration Guide
+## Configuration Guide
 
 ### Quality (CRF/CQ)
 Controls the balance between file size and video quality.
