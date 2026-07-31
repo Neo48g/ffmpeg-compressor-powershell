@@ -1,4 +1,4 @@
-# Advanced Video Compressor Utility
+# FFmpeg Compressor
 
 ## Key Features
 
