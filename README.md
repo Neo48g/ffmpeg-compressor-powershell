@@ -40,7 +40,7 @@ Controls the balance between file size and video quality.
 ### Codecs
 - **H.264**: Maximum compatibility. Works everywhere.
 - **H.265 (HEVC)**: 30-50% smaller files than H.264 at the same quality. (nvidia 30xx)
-- **AV1**: Up to 50% smaller than H.264. Best compression, but requires modern hardware for fast encoding. (nvidia 40xx)
+- **AV1**: Up to 50% smaller than H.264. Best compression, modern hardware requires. (nvidia 40xx)
 
 ### VMAF & Auto-CRF
 - **VMAF** measures perceived video quality on a scale of 0-100 (90+ is excellent).
