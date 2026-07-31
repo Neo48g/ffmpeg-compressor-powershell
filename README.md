@@ -2,25 +2,18 @@
 
 ## Key Features
 
--  Hardware Acceleration: Automatically detects your GPU (NVIDIA NVENC, AMD AMF, Intel QSV) and applies the optimal encoding parameters. Falls back to CPU (libx264/libx265/libsvtav1) if no modern GPU is found.
+-  Hardware Acceleration: Automatically detects your GPU (NVIDIA, AMD) and applies the optimal encoding parameters. Falls back to CPU, if no modern GPU is found.
 -  Smart Auto-CRF & VMAF: Integrates the **VMAF** (Video Multimethod Assessment Fusion) metric to measure perceived video quality. If the VMAF score drops below your threshold, the script automatically lowers the CRF (increases quality) and re-encodes until the target quality is met. In fact, it will check 2-3 times more than the compression itself, I dont recommend it for large files.
 -  Batch Processing: Recursively scans directories for video files and compresses them while preserving the original folder structure.
 -  Presets Management: Save, load, and delete custom encoding profiles (Presets) for different use cases.
 -  Detailed Logging: Generates comprehensive logs for both the compression process and VMAF calculations for every single file.
--  One-Click FFmpeg Setup: Includes a script to automatically download, extract, and add the **Full GPL version** of FFmpeg (with all libraries like x264, x265, AV1, VMAF) to your system PATH.
-
-## File Structure
-
-- `Run_Compress.bat` — The entry point. It automatically sets the **parent directory** of the scripts as the default input video folder.
-- `compress_video.ps1` — The main PowerShell script containing the UI, logic, hardware detection, and FFmpeg execution.
-- `install_ffmpeg.ps1` — A standalone script to automatically install the Full GPL version of FFmpeg and configure system environment variables.
 
 ## How to Use
 
 ### 1. Install FFmpeg (First Time Only)
 If you don't have FFmpeg installed, you can install it in two ways:
-- **Option A**: Run `install_ffmpeg.ps1` as Administrator.
-- **Option B**: Run `Run_Compress.bat`, press `F` in the menu, and select `1. Automatic installation via script`.
+- **A**: Run `install_ffmpeg.ps1` as Administrator.
+- **B**: Run `Run_Compress.bat`, press `F` in the menu, and select `1. Automatic installation via script`.
 
 ### 2. Compress Videos
 1. Place the script files in a folder.
