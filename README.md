@@ -3,7 +3,7 @@
 ## Key Features
 
 -  Hardware Acceleration: Automatically detects your GPU (NVIDIA NVENC, AMD AMF, Intel QSV) and applies the optimal encoding parameters. Falls back to CPU (libx264/libx265/libsvtav1) if no modern GPU is found.
--  Smart Auto-CRF & VMAF: Integrates the **VMAF** (Video Multimethod Assessment Fusion) metric to measure perceived video quality. If the VMAF score drops below your threshold, the script automatically lowers the CRF (increases quality) and re-encodes until the target quality is met.
+-  Smart Auto-CRF & VMAF: Integrates the **VMAF** (Video Multimethod Assessment Fusion) metric to measure perceived video quality. If the VMAF score drops below your threshold, the script automatically lowers the CRF (increases quality) and re-encodes until the target quality is met. In fact, it will check 2-3 times more than the compression itself, I dont recommend it for large files.
 -  Batch Processing: Recursively scans directories for video files and compresses them while preserving the original folder structure.
 -  Presets Management: Save, load, and delete custom encoding profiles (Presets) for different use cases.
 -  Detailed Logging: Generates comprehensive logs for both the compression process and VMAF calculations for every single file.
