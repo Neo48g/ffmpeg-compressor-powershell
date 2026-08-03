@@ -10,3 +10,8 @@
 - Automatic CRF reduction if quality is insufficient.
 #### Manage dependencies, presets, logs.
 use RUN_HUB.bat
+
+### Dependent
+- FFmpeg - compress, trim, convert media
+- yt-dlp - downland media
+- Node.js - for correctly working yt-dlp
